@@ -1,0 +1,70 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("/images/repairBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.repairDiv {
+    height: 800px;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.repairDiv img {
+    margin: auto;
+
+    height: 223px;
+    width: 342px;
+}
+
+.repairDiv div {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.repairDiv div p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+
+
+#redirection {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redirection a{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+
+@media screen and (min-width: 993px) {
+    .repairDiv:nth-of-type(1) {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+
+        height: 500px;
+    }
+
+    .repairDiv img {
+        height: 248px;
+        width: 395px;
+    }
+}

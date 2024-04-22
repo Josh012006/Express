@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+.merchandise {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.line {
+    border: 1px solid black;
+    width: 151px;
+    margin: auto;
+    position: relative;
+    top: -20px;
+}
+
+.productDiv {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 15px;
+}
+
+.productDiv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 600px;
+}
+
+.productDiv div p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 15px;
+}
+
+.productDiv div img {
+    border: 4px double black;
+    transition: transform 0.3s ease;
+}
+
+img[alt = "ordi"] {
+    width: 317px;
+    height: 221px;
+}
+
+img[alt = "phone"] {
+    width: 173px;
+    height: 221px;
+}
+
+img[alt = "tablet"] {
+    width: 192px;
+    height: 221px;
+}
+
+img[alt = "tablet"]:nth-of-type(1) {
+    width: 258px;
+    height: 221px;
+}
+
+.productDiv div img:hover {
+    transform: scale(1.2);
+}
+
+
+
+#redirection {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redirection a{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+
+
+@media screen and (min-width: 993px) {
+    #services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .productDiv {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+}

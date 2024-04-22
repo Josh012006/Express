@@ -1,0 +1,30 @@
+main {
+    min-height: 552px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    text-align: justify;
+}
+
+#emoji {
+    font-size: 100px;
+
+    animation: snore 1s infinite alternate;
+}
+
+@keyframes snore {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

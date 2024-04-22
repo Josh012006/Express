@@ -1,0 +1,14 @@
+footer {
+    text-align: center;
+    padding: 20px;
+    min-height: 100px;
+    background-color: black;
+    color: white;
+
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+footer span {
+    animation: glow 2s infinite;
+}

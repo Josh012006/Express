@@ -1,0 +1,52 @@
+header {
+    color: white;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+header h1 {
+    text-align: center;
+    animation: glow 2s infinite;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 4px;
+}
+
+header a:hover {
+    font-size: 18px;
+}
+
+@keyframes glow {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(212, 224, 87);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 552px;
+}
+
+main p {
+    text-align: justify;
+}
+
+main img {
+    margin: 40px;
+}
