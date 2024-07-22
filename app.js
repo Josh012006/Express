@@ -26,7 +26,7 @@ const checkTime = (req, res, next) => {
     const currentHour = currentTime.getHours();
 
     // Vérifiez si l'heure est entre 9h et 17h
-    if (currentHour >= 9 && currentHour < 17) {
+    if (currentHour >= 0 && currentHour < 17) {
       // Si l'heure est valide, passez au middleware suivant
         next();
     } else {
@@ -145,7 +145,7 @@ app.all('/fail', (req, res) => {
 
 
 //Ecouter la requête au port 5500
-app.listen(3000, function() {
-    console.log("Server is running at http://localhost:3000/");
+app.listen(5500, function() {
+    console.log("Server is running at http://localhost:5500/");
 });
 
