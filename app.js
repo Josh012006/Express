@@ -104,8 +104,9 @@ app.post('/soumis', (req, res) => {
         subject: 'Commande chez TechMasters',
         text: 
         `
-            Merci d'avoir fait confiance à TechMasters.
-            Votre commande a bien été reçue. Un de nos agents vous contactera dans les prochaines 48h.
+        Merci d'avoir fait confiance à TechMasters.
+        
+        Votre commande a bien été reçue. Un de nos agents vous contactera dans les prochaines 48h.
         `
     };
 
