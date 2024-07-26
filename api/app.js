@@ -1,9 +1,14 @@
-//Importation du module express
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const { engine }  = require('express-handlebars');
 const path = require('path');
 const bodyParser = require('body-parser');
+
+
+
+
+const PORT = process.env.PORT || 5500;
 
 
 //Création d'une instance d'express
@@ -12,11 +17,10 @@ const app = express();
 
 //Définition du path des views et du template engine utilisé
 app.engine('handlebars', engine());
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '..', 'views'));
 app.set('view engine', 'handlebars');
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, '..', "public")));
 app.use(bodyParser.json());
-
 
 
 
@@ -145,7 +149,10 @@ app.all('/fail', (req, res) => {
 
 
 //Ecouter la requête au port 5500
-app.listen(5500, function() {
-    console.log("Server is running at http://localhost:5500/");
+app.listen(PORT, function() {
+    console.log(`Server is running at http://localhost:${PORT}/`);
 });
+
+
+module.exports = app;
 
