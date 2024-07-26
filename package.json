@@ -14,14 +14,18 @@
     "morgan": "~1.9.1",
     "nodemailer": "^6.9.13"
   },
-  "description": "A showcasing webbsite for tech company",
+  "description": "A showcasing website for tech company",
   "main": "app.js",
   "engines": {
     "node": "20.x"
   },
   "scripts": {
+    "start": "cd api && nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
