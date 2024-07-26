@@ -16,7 +16,7 @@
   "description": "After cloning the repository, you just run npm install to install all the used dependencies.",
   "main": "app.js",
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   },
   "devDependencies": {},
   "scripts": {
