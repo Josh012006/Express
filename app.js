@@ -17,9 +17,9 @@ const app = express();
 
 //Définition du path des views et du template engine utilisé
 app.engine('handlebars', engine());
-app.set('views', path.join(__dirname, '..', 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
-app.use(express.static(path.join(__dirname, '..', "public")));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 
 
@@ -153,6 +153,4 @@ app.listen(PORT, function() {
     console.log(`Server is running at http://localhost:${PORT}/`);
 });
 
-
-module.exports = app;
 
