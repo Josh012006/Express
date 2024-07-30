@@ -78,7 +78,10 @@ main form textarea {
 
 @media screen and (max-width: 768px) {
     #formulaire {
-        width: 90%;
+        width: 100%;
+    }
+    label {
+        text-align: center;
     }
     
 }
