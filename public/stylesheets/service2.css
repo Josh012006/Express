@@ -63,6 +63,10 @@ main {
         height: 500px;
     }
 
+    .repairDiv {
+        height: 800px;
+    }
+    
     .repairDiv img {
         height: 248px;
         width: 395px;

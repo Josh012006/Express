@@ -76,7 +76,7 @@ main form textarea {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 993px) {
     #formulaire {
         width: 100%;
     }
