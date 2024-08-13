@@ -15,11 +15,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    position: relative;
 }
 
 section img {
     margin: 10px;
-    width: 144px;
+    max-width: 144px;
     height: 104px;
 }
 
@@ -31,9 +33,11 @@ section p {
 }
 
 #images {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services:nth-of-type(1) {
@@ -77,6 +81,6 @@ section p {
     }
 
     #images {
-        flex-direction: column;
+        grid-template-columns: 100%;
     }
 }

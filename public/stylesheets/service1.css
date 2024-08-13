@@ -37,7 +37,7 @@ main h1 {
     flex-direction: column;
     align-items: center;
 
-    min-height: 600px;
+    min-height: 650px;
 }
 
 .productDiv div p {
@@ -71,10 +71,6 @@ img[alt = "tablet"]:nth-of-type(1) {
     height: 221px;
 }
 
-.productDiv div img:hover {
-    transform: scale(1.2);
-}
-
 
 
 #redirection {
@@ -102,11 +98,15 @@ img[alt = "tablet"]:nth-of-type(1) {
 
     .productDiv {
         border-left: 1px solid black;
-        border-right: 1px solid black;
+        border-right: 1px solid black; 
     }
 
     .productDiv div {
-        height: 600px;
+        height: 850px;
+    }
+
+    .productDiv div img:hover {
+        transform: scale(1.2);
     }
 
 }
