@@ -30,7 +30,7 @@ const checkTime = (req, res, next) => {
     const currentHour = currentTime.getHours();
 
     // Vérifiez si l'heure est entre 9h et 17h
-    if (currentHour >= 0 && currentHour < 17) {
+    if (currentHour >= 0 && currentHour < 24) {
       // Si l'heure est valide, passez au middleware suivant
         next();
     } else {
